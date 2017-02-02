@@ -9,4 +9,4 @@ Codename: Griffin
 1. Always display a mouse pointer, but USB-OTG working properly.
 2. System-less SuperSU zip not working.
 
-NOTE: This tree is compatible with cm-13.0 tree.
+NOTE: This tree is compatible with omni 6.0 tree.
