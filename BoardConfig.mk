@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright 2017 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,8 @@
 # definition file).
 #
 
+DEVICE_TREE := device/moto/griffin
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8996
@@ -36,15 +38,13 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := kryo
+TARGET_CPU_SMP := true
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
 
 # Prebuilts
 TARGET_PREBUILT_KERNEL := device/moto/griffin/zImage
@@ -83,12 +83,17 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_DEFAULT_BRIGHTNESS := 80
 TW_INCLUDE_NTFS_3G := true
-TW_INCLUDE_CRYPTO := true
 TW_NO_USB_STORAGE := true
 #TW_USE_TOOLBOX    := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true
+# TW_DEFAULT_LANGUAGE := zh_CN
+
+# Encryption support
+TW_INCLUDE_CRYPTO := true
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Debug flags
 #TWRP_INCLUDE_LOGCAT := true
