@@ -20,8 +20,4 @@ Battery | Li-Ion 2600mAh battery
 Display | 1440 x 2560 pixels (~535 ppi pixel density)
 Camera  | 13 MP, f/1.8, laser autofocus, OIS, dual-LED (dual tone) flash
 
-### Issues:
-
-1. Always display a mouse pointer.
-
-NOTE: This tree is compatible with omni 6.0 tree.
+NOTE: This tree is compatible with omni 7.1 tree.

@@ -98,3 +98,6 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 # Debug flags
 #TWRP_INCLUDE_LOGCAT := true
 #TARGET_USES_LOGD := true
+
+# Remove mouse pointer
+TW_INPUT_BLACKLIST := "hbtp_vm"
