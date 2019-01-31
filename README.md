@@ -24,4 +24,4 @@ NOTE: This tree is compatible with omni 7.1 tree.
 
 ### Kernel source
 
-[Here](https://github.com/kaneawk/android_kernel_motorola_msm8996)
+[Here](https://github.com/MotoZ-2016/android_kernel_motorola_msm8996/tree/twrp)
