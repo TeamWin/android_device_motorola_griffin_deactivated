@@ -47,7 +47,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Prebuilts
-TARGET_PREBUILT_KERNEL := device/moto/griffin/zImage
+TARGET_PREBUILT_KERNEL := device/moto/griffin/Image.gz
 BOARD_CUSTOM_BOOTIMG_MK := device/moto/griffin/mkbootimg.mk
 
 # Kernel
